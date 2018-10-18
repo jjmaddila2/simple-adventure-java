@@ -1,0 +1,395 @@
+{
+  "startingRoom": "PamDesk",
+  "endingRoom": "MichealOffice",
+  "player": {
+    "name": "Player 1",
+    "attack": 1.0,
+    "defense": 1.0,
+    "health": 1.5,
+    "items": [],
+    "level": 0
+  },
+  "rooms": [
+    {
+      "name": "PamDesk",
+      "description": "You are at Pam's office you can see Jim's and Creed's office",
+      "items": [
+        {
+          "name": "pen",
+          "damage": 0.1
+        }
+      ],
+      "monsters": [],
+      "directions": [
+        {
+          "directionName": "North",
+          "room": "JimDesk"
+        },
+        {
+          "directionName": "NorthEast",
+          "room": "CreedDesk"
+        }
+      ]
+    },
+    //break
+    {
+      "name": "JimDesk",
+      "description": "You are at Jim's office you can see Creed's, Dwight's, Angela, and Pam's office",
+      "items": [
+        {
+          "name":"laziness",
+          "damage": 0.05
+        },
+        {
+          "name":"picture",
+          "damage": 0.08
+        },
+        {
+          "name": "wrapping paper",
+          "damage": 0.15
+        }
+      ],
+      "monsters": [
+        {
+          "name": "snowman",
+          "attack": 0.3,
+          "defense": 0.1,
+          "health": 0.5,
+          "currentHealth": 0.5
+        },
+        {
+          "name": "karen",
+          "attack": 0.4,
+          "defense": 0.2,
+          "health": 0.625,
+          "currentHealth": 0.625
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "NorthEast",
+          "room": "DwightDesk"
+        },
+        {
+          "directionName": "NorthWest",
+          "room": "AngelaDesk"
+        },
+        {
+          "directionName": "South",
+          "room": "PamDesk"
+        },
+        {
+          "directionName": "SouthEast",
+          "room": "CreedDesk"
+        }
+      ]
+    },
+    //break
+    {
+      "name": "CreedDesk",
+      "description": "You are in Creed's office. You can see Pam's, Jim's, and Dwight's office",
+      "items": [
+        {
+          "name":"scuba gear",
+          "damage": 0.2
+        },
+        {
+          "name":"cannabis",
+          "damage": 0.07
+        },
+        {
+          "name":"chair",
+          "damage": 0.05
+        }
+      ],
+      "monsters": [
+        {
+          "name": "police",
+          "attack": 1.4,
+          "defense": 0.6,
+          "health": 0.7,
+          "currentHealth": 0.7
+        },
+        {
+          "name": "sweeden",
+          "attack": 1.2,
+          "defense": 0.2,
+          "health": 0.3,
+          "currentHealth": 0.3
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "North",
+          "room": "DwightDesk"
+        },
+        {
+          "directionName": "NorthWest",
+          "room": "JimDesk"
+        },
+        {
+          "directionName": "SouthWest",
+          "room": "PamDesk"
+        }
+      ]
+    },
+    {
+      "name": "DwightDesk",
+      "description": "You are in Dwight's office. You can see Creed's, Jim's, Kelly's, Angela's, and Kevin's office",
+      "items": [
+        {
+        "name":"bobblehead",
+        "damage": 0.21
+        },
+        {
+          "name":"pepperspray",
+          "damage": 0.17
+        },
+        {
+          "name":"blackbelt",
+          "damage": 0.25
+        }
+      ],
+      "monsters": [
+        {
+          "name": "fire hazards",
+          "attack": 1.3,
+          "defense": 1.0,
+          "health": 0.5,
+          "currentHealth": 0.5
+        },
+        {
+          "name": "stupidity",
+          "attack": 1.26,
+          "defense": 0.75,
+          "health": 0.9,
+          "currentHealth": 0.9
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "South",
+          "room": "CreedDesk"
+        },
+        {
+          "directionName": "NorthWest",
+          "room": "KevinDesk"
+        },
+        {
+          "directionName": "SouthWest",
+          "room": "JimDesk"
+        },
+        {
+          "directionName": "NorthEast",
+          "room": "KellyDesk"
+        },
+        {
+          "directionName": "West",
+          "room": "AngelaDesk"
+        }
+      ]
+    },
+    //break
+    {
+      "name": "AngelaDesk",
+      "description": "You are in Angela's office. You can see Jim's, Dwight's, Stanely's,  and Kevin's office",
+      "items": [
+        {
+          "name":"black cat",
+          "damage": 0.3
+        },
+        {
+          "name":"white cat",
+          "damage": 0.3
+        },
+        {
+          "name":"grey cat",
+          "damage": 0.3
+        }
+      ],
+      "monsters": [
+        {
+          "name": "senator",
+          "attack": 1.7,
+          "defense": 0.9,
+          "health": 1.0,
+          "currentHealth": 1.0
+        },
+        {
+          "name": "affairs",
+          "attack": 1.5,
+          "defense": 1.2,
+          "health": 1.0,
+          "currentHealth": 1.0
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "South",
+          "room": "CreedDesk"
+        },
+        {
+          "directionName": "NorthWest",
+          "room": "StanelyDesk"
+        },
+        {
+          "directionName": "East",
+          "room": "DwightDesk"
+        },
+        {
+          "directionName": "NorthEast",
+          "room": "KevinDesk"
+        }
+      ]
+    },
+    //break
+    {
+      "name": "KellyDesk",
+      "description": "You are in Kelly's office. You can see Dwight's office",
+      "items": [
+        {
+          "name":"mallard",
+          "damage": 1.5
+        }
+      ],
+      "monsters": [
+        {
+          "name": "princess dianna",
+          "attack": 1.4,
+          "defense": 1.3,
+          "health": 2.0,
+          "currentHealth": 2.0
+        },
+        {
+          "name": "boss",
+          "attack": 1.8,
+          "defense": 0.9,
+          "health": 1.4,
+          "currentHealth": 1.4
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "SouthWest",
+          "room": "DwightDesk"
+        }
+      ]
+    },
+    //break
+    {
+      "name": "StanelyDesk",
+      "description": "You are in Stanely's office. You can see Angela's office",
+      "items": [
+        {
+        "name":"stutter",
+        "damage": 2.0
+        }
+      ],
+      "monsters": [
+        {
+          "name": "heart attack",
+          "attack": 2.1,
+          "defense": 0.6,
+          "health": 1.1,
+          "currentHealth": 1.1
+        },
+        {
+          "name": "cynthia",
+          "attack": 2.0,
+          "defense": 1.6,
+          "health": 1.7,
+          "currentHealth": 1.7
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "SouthEast",
+          "room": "AngelaDesk"
+        }
+      ]
+    },
+    //break
+    {
+      "name": "KevinDesk",
+      "description": "You are in Kevin's office. You can see Angela's, Dwight's, and Micheal's office",
+      "items": [
+        {
+          "name":"hot dogs",
+          "damage": 1.0
+        },
+        {
+          "name":"kevins famous chili",
+          "damage": 1.4
+        }
+      ],
+      "monsters": [
+        {
+          "name": "obesity",
+          "attack": 2.5,
+          "defense": 1.6,
+          "health": 2.1,
+          "currentHealth": 2.1
+        },
+        {
+          "name": "holly fleck",
+          "attack": 1.8,
+          "defense": 2.0,
+          "health": 2.4,
+          "currentHealth": 2.4
+        },
+        {
+          "name": "the final boss",
+          "attack": 3.4,
+          "defense": 3.0,
+          "health": 3.5,
+          "currentHealth": 3.5
+        }
+      ],
+      "directions": [
+        {
+          "directionName": "SouthEast",
+          "room": "DwightDesk"
+        },
+        {
+          "directionName": "NorthEast",
+          "room": "MichealOffice"
+        },
+        {
+          "directionName": "SouthWest",
+          "room": "AngelaDesk"
+        }
+      ]
+    },
+    //break
+    {
+      "name": "MichealOffice",
+      "description": "You are in Micheal's office. You have won",
+      "directions": [
+        {
+          "directionName": "South",
+          "room": "CreedDesk"
+        },
+        {
+          "directionName": "NorthWest",
+          "room": "KevinDesk"
+        },
+        {
+          "directionName": "SouthWest",
+          "room": "JimDesk"
+        },
+        {
+          "directionName": "NorthEast",
+          "room": "KellyDesk"
+        },
+        {
+          "directionName": "West",
+          "room": "AngelaDesk"
+        }
+      ]
+    }
+
+
+
+  ]
+
+}
